@@ -1,0 +1,19 @@
+{% extends 'main/header.html' %}
+{% block content %}
+  <div class="row">
+    {% for proj in projects %}
+        <div class="col s12 m6">
+          <div class="card hoverable">
+            <div class="card-content">
+              <span class="card-title">{{proj.project_title}}</span>
+              <p style="font-size:70%">Published {{proj.project_date}}</p>
+              <p>{{proj.project_description|safe}}</p>
+            </div>
+          </div>
+        </div>
+    {% endfor %}
+
+  </div>
+
+
+{% endblock %}
