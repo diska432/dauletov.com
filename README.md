@@ -1,2 +1,2 @@
-# dauletov.com
-personal website
+# personal-website
+dauletov.com
